@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsAspireHost>true</IsAspireHost>
-    <UserSecretsId>60dae4bf-6c43-4c9a-9482-24b17877e2a8</UserSecretsId>
+    <UserSecretsId>0772bf6e-f433-483d-b438-bca67cec9368</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Tracker.Api\Tracker.Api.csproj" />
+    <ProjectReference Include="..\src\Tracker.Api\Tracker.Api.csproj" />
   </ItemGroup>
 
 </Project>

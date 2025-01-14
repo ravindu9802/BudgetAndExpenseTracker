@@ -1,0 +1,15 @@
+@Tracker.Api_HostAddress = https://localhost:7166/api/user
+
+### Create User
+POST {{Tracker.Api_HostAddress}}
+Content-Type: application/json
+
+{
+  "FirstName": "ravindu",
+  "LastName": "rasanjana",
+  "Email": "rav1@ras.com"
+}
+
+### Delete User
+Delete {{Tracker.Api_HostAddress}}/019465a6-da65-7328-bed1-2cdad1323d94
+Content-Type: application/json

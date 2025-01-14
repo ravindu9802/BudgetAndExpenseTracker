@@ -15,9 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Api", "src\Tracker.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tracker.Infrastructure", "src\Tracker.Intrastructure\Tracker.Infrastructure.csproj", "{A6928643-B672-4484-A75C-1C8D32472D16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetAndExpenseTracker.AppHost", "src\BudgetAndExpenseTracker.AppHost\BudgetAndExpenseTracker.AppHost.csproj", "{4BB38292-3339-4E48-BBB6-B6F7A8799714}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetAndExpenseTracker.AppHost", "BudgetAndExpenseTracker.AppHost\BudgetAndExpenseTracker.AppHost.csproj", "{A78A178D-398E-4654-9E12-1ABA7D50A307}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetAndExpenseTracker.ServiceDefaults", "src\BudgetAndExpenseTracker.ServiceDefaults\BudgetAndExpenseTracker.ServiceDefaults.csproj", "{054EF03F-F2E1-4095-84E0-9D9AEE2C9818}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetAndExpenseTracker.ServiceDefaults", "BudgetAndExpenseTracker.ServiceDefaults\BudgetAndExpenseTracker.ServiceDefaults.csproj", "{6EE4839A-6B64-4C0F-A701-A68A0BE9B77D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,14 +41,14 @@ Global
 		{A6928643-B672-4484-A75C-1C8D32472D16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6928643-B672-4484-A75C-1C8D32472D16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6928643-B672-4484-A75C-1C8D32472D16}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BB38292-3339-4E48-BBB6-B6F7A8799714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BB38292-3339-4E48-BBB6-B6F7A8799714}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BB38292-3339-4E48-BBB6-B6F7A8799714}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BB38292-3339-4E48-BBB6-B6F7A8799714}.Release|Any CPU.Build.0 = Release|Any CPU
-		{054EF03F-F2E1-4095-84E0-9D9AEE2C9818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{054EF03F-F2E1-4095-84E0-9D9AEE2C9818}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{054EF03F-F2E1-4095-84E0-9D9AEE2C9818}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{054EF03F-F2E1-4095-84E0-9D9AEE2C9818}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A78A178D-398E-4654-9E12-1ABA7D50A307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A78A178D-398E-4654-9E12-1ABA7D50A307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A78A178D-398E-4654-9E12-1ABA7D50A307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A78A178D-398E-4654-9E12-1ABA7D50A307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EE4839A-6B64-4C0F-A701-A68A0BE9B77D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE4839A-6B64-4C0F-A701-A68A0BE9B77D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE4839A-6B64-4C0F-A701-A68A0BE9B77D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE4839A-6B64-4C0F-A701-A68A0BE9B77D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,18 @@
+@Tracker.Api_HostAddress = http://localhost:5041/api/income
+
+### Create Income
+POST {{Tracker.Api_HostAddress}}
+Content-Type: application/json
+
+{
+  "UserId": "019465cb-0e37-7fc3-903e-9faadb519690",
+  "Amount": 100000,
+  "Unit": "lkr",
+  "Date": "2025-01-04",
+  "Description": "IRS salary"
+}
+
+
+### Delete Income
+Delete {{Tracker.Api_HostAddress}}/019465a6-da65-7328-bed1-2cdad1323d94
+Content-Type: application/json

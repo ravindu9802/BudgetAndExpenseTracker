@@ -1,8 +1,13 @@
+using Tracker.Application.Extensions;
+using Tracker.Infrastructure.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
 
 // Add services to the container.
+builder.Services.ApplicationExtension(builder.Configuration);
+builder.Services.InfrastructureExtension(builder.Configuration);
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
