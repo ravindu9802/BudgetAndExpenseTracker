@@ -10,6 +10,14 @@ Content-Type: application/json
   "Email": "rav1@ras.com"
 }
 
+### Login User
+Post {{Tracker.Api_HostAddress}}/login
+Content-Type: application/json
+
+{
+  "Email": "rav1@ras.com"
+}
+
 ### Delete User
 Delete {{Tracker.Api_HostAddress}}/019465a6-da65-7328-bed1-2cdad1323d94
 Content-Type: application/json

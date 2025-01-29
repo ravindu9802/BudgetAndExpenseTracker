@@ -1,9 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Tracker.Domain.Abstractions.Authentication;
 using Tracker.Domain.Repositories.Expenses;
 using Tracker.Domain.Repositories.Incomes;
 using Tracker.Domain.Repositories.Users;
+using Tracker.Infrastructure.Authentication;
 using Tracker.Infrastructure.Persistence;
 using Tracker.Infrastructure.Repositories.Expenses;
 using Tracker.Infrastructure.Repositories.Incomes;
@@ -36,6 +38,7 @@ public static class ServiceCollectionExtension
         services.AddScoped<IIncomeUoW, IncomeUoW>();
         services.AddScoped<IExpenseRepository, ExpenseRepository>();
         services.AddScoped<IExpenseUoW, ExpenseUoW>();
+        services.AddScoped<IJwtProvider, JwtProvider>();
 
         return services;
     }

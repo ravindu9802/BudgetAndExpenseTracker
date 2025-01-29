@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Tracker.Application.Users.Add;
 using Tracker.Application.Users.Delete;
+using Tracker.Application.Users.Login;
 
 namespace Tracker.Api.Controllers;
 
@@ -13,6 +14,15 @@ public class UserController(ISender sender) : ControllerBase
     public async Task<IActionResult> Create([FromBody] AddUserRequest addUserRequest)
     {
         var command = new AddUserCommand(addUserRequest.FirstName, addUserRequest.LastName, addUserRequest.Email);
+        var result = await sender.Send(command);
+        return result.IsSuccess ? Ok(result.Value) : BadRequest(result.Error);
+    }
+
+    [HttpPost]
+    [Route("login")]
+    public async Task<IActionResult> Login([FromBody] LoginUserRequest loginUserRequest)
+    {
+        var command = new LoginUserCommand(loginUserRequest.Email);
         var result = await sender.Send(command);
         return result.IsSuccess ? Ok(result.Value) : BadRequest(result.Error);
     }
